@@ -22,9 +22,11 @@
 }
 
 .top{
-    background-color: blueviolet;
+    background: #561d90;
+    background: linear-gradient(to right,#561d90,#872685);
     
 }
+
 
 /* Лого */
 .header__logo{
@@ -67,15 +69,16 @@
     color:white;
     padding: 1rem 1rem 1rem;
 }
+
 .navdown{
     display:none;
     position: absolute;
     top: 3.6rem;
     left: 0;
-    background-color: blueviolet;
+    background: linear-gradient(to right,#561d90,#872685);
 }
 .navbar__link:hover,.navdown__link:hover{
-    background-color: brown;
+    background: #6a2b94;
     color: white;
 }
 .navbar__item:hover .navdown{
@@ -99,8 +102,9 @@
 
 
 .footer{
-  background-color: blueviolet;  
-  padding: 2rem 0;
+    background: #561d90;
+    background: linear-gradient(to right,#561d90,#872685);
+   padding: 2rem 0;
 }
 .footer_container{
     display: flex;
@@ -120,6 +124,6 @@
 
 .footer_mail{
     text-decoration: none;
-    color:white
+    color:white;
 }
 
