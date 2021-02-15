@@ -73,20 +73,22 @@
 .navdown{
     display:none;
     position: absolute;
-    top: 3.6rem;
+    top: 100%;
     left: 0;
-    background: linear-gradient(to right,#561d90,#872685);
+    background: linear-gradient(to right,#681d67,#561d90);
 }
 .navbar__link:hover,.navdown__link:hover{
-    background: #6a2b94;
+    background: #4e017e;
     color: white;
 }
+
 .navbar__item:hover .navdown{
     display:block;
 }
 .navdown__item{
     list-style: none;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
    
 }
 .navdown__link{
@@ -95,7 +97,8 @@
     color:white;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
-    width: 320px;
+    width: auto;
+    white-space: nowrap;
     
 }
 
