@@ -35,6 +35,14 @@
     align-items: center;
     padding:2rem;
     
+    
+}
+
+
+.logo-image img{
+    /* object-fit: cover; */
+    width: auto;
+    height: 9rem;
 }
 
 .header__social{
@@ -204,10 +212,12 @@
 }
 .footer_container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    /* align-content: center; */
     font-size: 1.1 rem;
     color: white;
+    padding: 0 2rem;
 }
 
 .footer_item{
@@ -223,3 +233,122 @@
     color:white;
 }
 
+.navbar-mobile{
+    width: 4rem;
+    height: 4rem;
+    background-color: chartreuse;
+    display: none;
+
+}
+
+@media (max-width:1000px){
+    html{
+        font-size: 14px;
+        
+    }
+    
+}
+
+@media (max-width:900px){
+    html{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:850px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:750px){
+    html{
+        font-size: 11px;
+    }
+    
+}
+
+@media (max-width:670px){
+    html{
+        font-size: 11px;
+    }
+  
+    .navbar{
+        display: none;
+        font-size: 1rem;
+    }
+    .logo-image img{
+        max-width: 10rem; 
+        height: auto;
+    }
+    .header__phone{
+        font-size: 1rem;
+    }
+    .navbar-mobile{
+        display: block;
+    }
+
+    .index__banner{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem;
+
+    }
+    .banner__left{
+        max-width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+    .banner__right{
+        align-self: inherit;
+        max-width: 100%;
+        padding: 2rem;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .banner__right img{
+        max-width: 90%;
+    }
+
+    .score__heading{
+        font-size: 4rem;
+    }
+    .score__text{
+        font-size: 1.2rem;
+    }
+
+    .footer{
+        margin-top: 2rem;
+    }
+    .footer_container{
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .footer_item{
+        max-width: 90%;
+        padding-top: 1rem;
+        border-top: 1px solid #872685;
+        text-align: center;
+    }
+    
+}
+
+
+@media (max-width:500px){
+   .header__phone{
+       display: none;
+   }
+   .header__logo{
+    box-sizing: border-box;
+}
+}
+@media (max-width:400px){
+.header__social{
+    display: none;
+
+}
+}
