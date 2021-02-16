@@ -31,7 +31,10 @@
                     +7 999 999 99 99
                 </p>
                 <div class="navbar-mobile">
-
+                    <div class="navbar-mobail-line"></div>
+                    <div class="navbar-mobail-line"></div>
+                    <div class="navbar-mobail-line"></div>
+                    <div class="navbar-mobail-line"></div>
                 </div>
 
             </div>
@@ -190,11 +193,20 @@
             </div>
         </div>
 
-
-
-
     </div>
+    <script type="text/javascript">
 
+        document.getElementsByClassName('navbar-mobile')[0].addEventListener('click', function (event) {
+            var menu = document.getElementsByClassName('navbar container')[0];
+            if (menu.style.display === '') {
+                menu.style.display = 'none';
+            }
+            // prompt(menu.style.display);
+            menu.style.display = menu.style.display === ('none' || '') ? 'flex' : 'none';
+
+        });
+
+    </script>
 
 </body>
 

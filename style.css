@@ -234,12 +234,20 @@
 }
 
 .navbar-mobile{
-    width: 4rem;
-    height: 4rem;
-    background-color: chartreuse;
+    width: 40px;
+    height: 40px;
+    background-color:blueviolet;
     display: none;
-
+    flex-direction:column ;
+    justify-content: space-evenly;
+    border: 5px solid white;
+    border-radius: 5px;
 }
+.navbar-mobail-line{
+    background-color: white;
+    height: 5px;
+}
+
 
 @media (max-width:1000px){
     html{
@@ -276,6 +284,11 @@
     .navbar{
         display: none;
         font-size: 1rem;
+        flex-direction: column;
+    }
+
+    .navbar__item:hover .navdown{
+        display:none;
     }
     .logo-image img{
         max-width: 10rem; 
@@ -285,8 +298,9 @@
         font-size: 1rem;
     }
     .navbar-mobile{
-        display: block;
+        display: flex;
     }
+  
 
     .index__banner{
         flex-direction: column;
