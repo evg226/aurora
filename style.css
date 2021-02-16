@@ -49,10 +49,19 @@
     display: flex;
     justify-content: center;
 }
+.header__social img {
+    width: 3rem;
+    height: auto;
+}
 
 .header__phone{
     color:white;
     font-size: 1.5rem;
+
+}
+.header__phone img{
+    width:2rem;
+    height: auto;
 }
 
 .top_line{
@@ -274,6 +283,11 @@
         font-size: 11px;
     }
     
+    .navbar{
+        display: none;
+        font-size: 1.4rem;
+        flex-direction: row;
+    }
 }
 
 @media (max-width:670px){
@@ -348,18 +362,18 @@
         border-top: 1px solid #872685;
         text-align: center;
     }
+
+    .header__phone{
+        display: none;
+    }
+    .header__logo{
+     box-sizing: border-box;
+ }
     
 }
 
 
-@media (max-width:500px){
-   .header__phone{
-       display: none;
-   }
-   .header__logo{
-    box-sizing: border-box;
-}
-}
+
 @media (max-width:400px){
 .header__social{
     display: none;
